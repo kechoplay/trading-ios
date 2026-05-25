@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CC4D87A2FC4987F00EFFD29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4D8792FC4987F00EFFD29 /* Assets.xcassets */; };
+		4CC4D87D2FC4987F00EFFD29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4D87C2FC4987F00EFFD29 /* Preview Assets.xcassets */; };
+		4CC4D8C92FC49A1D00EFFD29 /* WatchlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8A02FC49A1C00EFFD29 /* WatchlistViewModel.swift */; };
+		4CC4D8CA2FC49A1D00EFFD29 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8A12FC49A1C00EFFD29 /* MarketViewModel.swift */; };
+		4CC4D8CB2FC49A1D00EFFD29 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8A22FC49A1C00EFFD29 /* OrderViewModel.swift */; };
+		4CC4D8CE2FC49A1D00EFFD29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4D8A82FC49A1C00EFFD29 /* Assets.xcassets */; };
+		4CC4D8CF2FC49A1D00EFFD29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4D8AA2FC49A1C00EFFD29 /* Preview Assets.xcassets */; };
+		4CC4D8D12FC49A1D00EFFD29 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B02FC49A1D00EFFD29 /* README.md */; };
+		4CC4D8D22FC49A1D00EFFD29 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B22FC49A1D00EFFD29 /* Order.swift */; };
+		4CC4D8D32FC49A1D00EFFD29 /* CandleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B32FC49A1D00EFFD29 /* CandleData.swift */; };
+		4CC4D8D42FC49A1D00EFFD29 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B42FC49A1D00EFFD29 /* Asset.swift */; };
+		4CC4D8D52FC49A1D00EFFD29 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B72FC49A1D00EFFD29 /* ChartView.swift */; };
+		4CC4D8D62FC49A1D00EFFD29 /* OrderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8B92FC49A1D00EFFD29 /* OrderSheet.swift */; };
+		4CC4D8D72FC49A1D00EFFD29 /* PriceChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8BA2FC49A1D00EFFD29 /* PriceChartView.swift */; };
+		4CC4D8D82FC49A1D00EFFD29 /* AssetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8BB2FC49A1D00EFFD29 /* AssetRow.swift */; };
+		4CC4D8D92FC49A1D00EFFD29 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8BD2FC49A1D00EFFD29 /* MarketView.swift */; };
+		4CC4D8DA2FC49A1D00EFFD29 /* MarketSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8BE2FC49A1D00EFFD29 /* MarketSummaryCard.swift */; };
+		4CC4D8DB2FC49A1D00EFFD29 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C02FC49A1D00EFFD29 /* OrdersView.swift */; };
+		4CC4D8DC2FC49A1D00EFFD29 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C22FC49A1D00EFFD29 /* WatchlistView.swift */; };
+		4CC4D8DD2FC49A1D00EFFD29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C32FC49A1D00EFFD29 /* ContentView.swift */; };
+		4CC4D8DE2FC49A1D00EFFD29 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C52FC49A1D00EFFD29 /* MockData.swift */; };
+		4CC4D8DF2FC49A1D00EFFD29 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C62FC49A1D00EFFD29 /* Colors.swift */; };
+		4CC4D8E02FC49A1D00EFFD29 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C72FC49A1D00EFFD29 /* Formatters.swift */; };
+		4CC4D8E12FC49A1D00EFFD29 /* TradeProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */; };
+		A1B2C3D4E5F6A7B8C9D0E1F3 /* TradingViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* TradingViewWebView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CC4D8722FC4987C00EFFD29 /* TradePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC4D8792FC4987F00EFFD29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CC4D87C2FC4987F00EFFD29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CC4D8A02FC49A1C00EFFD29 /* WatchlistViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchlistViewModel.swift; sourceTree = "<group>"; };
+		4CC4D8A12FC49A1C00EFFD29 /* MarketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		4CC4D8A22FC49A1C00EFFD29 /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		4CC4D8A52FC49A1C00EFFD29 /* TradeProUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeProUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CC4D8A62FC49A1C00EFFD29 /* TradeProUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeProUITests.swift; sourceTree = "<group>"; };
+		4CC4D8A82FC49A1C00EFFD29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CC4D8AA2FC49A1C00EFFD29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CC4D8AB2FC49A1C00EFFD29 /* TradePro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TradePro.xcodeproj; sourceTree = "<group>"; };
+		4CC4D8AF2FC49A1C00EFFD29 /* TradeProTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeProTests.swift; sourceTree = "<group>"; };
+		4CC4D8B02FC49A1D00EFFD29 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		4CC4D8B22FC49A1D00EFFD29 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		4CC4D8B32FC49A1D00EFFD29 /* CandleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandleData.swift; sourceTree = "<group>"; };
+		4CC4D8B42FC49A1D00EFFD29 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		4CC4D8B72FC49A1D00EFFD29 /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* TradingViewWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradingViewWebView.swift; sourceTree = "<group>"; };
+		4CC4D8B92FC49A1D00EFFD29 /* OrderSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderSheet.swift; sourceTree = "<group>"; };
+		4CC4D8BA2FC49A1D00EFFD29 /* PriceChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceChartView.swift; sourceTree = "<group>"; };
+		4CC4D8BB2FC49A1D00EFFD29 /* AssetRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetRow.swift; sourceTree = "<group>"; };
+		4CC4D8BD2FC49A1D00EFFD29 /* MarketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		4CC4D8BE2FC49A1D00EFFD29 /* MarketSummaryCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketSummaryCard.swift; sourceTree = "<group>"; };
+		4CC4D8C02FC49A1D00EFFD29 /* OrdersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		4CC4D8C22FC49A1D00EFFD29 /* WatchlistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		4CC4D8C32FC49A1D00EFFD29 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../ContentView.swift; sourceTree = "<group>"; };
+		4CC4D8C52FC49A1D00EFFD29 /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4CC4D8C62FC49A1D00EFFD29 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4CC4D8C72FC49A1D00EFFD29 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TradeProApp.swift; path = ../../TradeProApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC4D86F2FC4987C00EFFD29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CC4D8692FC4987B00EFFD29 = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8742FC4987C00EFFD29 /* TradePro */,
+				4CC4D8732FC4987C00EFFD29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC4D8732FC4987C00EFFD29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8722FC4987C00EFFD29 /* TradePro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC4D8742FC4987C00EFFD29 /* TradePro */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8C32FC49A1D00EFFD29 /* ContentView.swift */,
+				4CC4D8B12FC49A1D00EFFD29 /* Models */,
+				4CC4D8B02FC49A1D00EFFD29 /* README.md */,
+				4CC4D8A32FC49A1C00EFFD29 /* TradePro */,
+				4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */,
+				4CC4D8C42FC49A1D00EFFD29 /* Utils */,
+				4CC4D89F2FC49A1C00EFFD29 /* ViewModels */,
+				4CC4D8B52FC49A1D00EFFD29 /* Views */,
+				4CC4D8792FC4987F00EFFD29 /* Assets.xcassets */,
+				4CC4D87B2FC4987F00EFFD29 /* Preview Content */,
+			);
+			path = TradePro;
+			sourceTree = "<group>";
+		};
+		4CC4D87B2FC4987F00EFFD29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D87C2FC4987F00EFFD29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CC4D89F2FC49A1C00EFFD29 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8A02FC49A1C00EFFD29 /* WatchlistViewModel.swift */,
+				4CC4D8A12FC49A1C00EFFD29 /* MarketViewModel.swift */,
+				4CC4D8A22FC49A1C00EFFD29 /* OrderViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ../../ViewModels;
+			sourceTree = "<group>";
+		};
+		4CC4D8A32FC49A1C00EFFD29 /* TradePro */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8A42FC49A1C00EFFD29 /* TradeProUITests */,
+				4CC4D8A72FC49A1C00EFFD29 /* TradePro */,
+				4CC4D8AB2FC49A1C00EFFD29 /* TradePro.xcodeproj */,
+				4CC4D8AE2FC49A1C00EFFD29 /* TradeProTests */,
+			);
+			name = TradePro;
+			sourceTree = SOURCE_ROOT;
+		};
+		4CC4D8A42FC49A1C00EFFD29 /* TradeProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8A52FC49A1C00EFFD29 /* TradeProUITestsLaunchTests.swift */,
+				4CC4D8A62FC49A1C00EFFD29 /* TradeProUITests.swift */,
+			);
+			path = TradeProUITests;
+			sourceTree = "<group>";
+		};
+		4CC4D8A72FC49A1C00EFFD29 /* TradePro */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8A82FC49A1C00EFFD29 /* Assets.xcassets */,
+				4CC4D8A92FC49A1C00EFFD29 /* Preview Content */,
+			);
+			path = TradePro;
+			sourceTree = "<group>";
+		};
+		4CC4D8A92FC49A1C00EFFD29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8AA2FC49A1C00EFFD29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CC4D8AC2FC49A1C00EFFD29 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC4D8AE2FC49A1C00EFFD29 /* TradeProTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8AF2FC49A1C00EFFD29 /* TradeProTests.swift */,
+			);
+			path = TradeProTests;
+			sourceTree = "<group>";
+		};
+		4CC4D8B12FC49A1D00EFFD29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8B22FC49A1D00EFFD29 /* Order.swift */,
+				4CC4D8B32FC49A1D00EFFD29 /* CandleData.swift */,
+				4CC4D8B42FC49A1D00EFFD29 /* Asset.swift */,
+			);
+			name = Models;
+			path = ../../Models;
+			sourceTree = "<group>";
+		};
+		4CC4D8B52FC49A1D00EFFD29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8B62FC49A1D00EFFD29 /* Chart */,
+				4CC4D8B82FC49A1D00EFFD29 /* Components */,
+				4CC4D8BC2FC49A1D00EFFD29 /* Market */,
+				4CC4D8BF2FC49A1D00EFFD29 /* Orders */,
+				4CC4D8C12FC49A1D00EFFD29 /* Watchlist */,
+			);
+			name = Views;
+			path = ../../Views;
+			sourceTree = "<group>";
+		};
+		4CC4D8B62FC49A1D00EFFD29 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8B72FC49A1D00EFFD29 /* ChartView.swift */,
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* TradingViewWebView.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		4CC4D8B82FC49A1D00EFFD29 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8B92FC49A1D00EFFD29 /* OrderSheet.swift */,
+				4CC4D8BA2FC49A1D00EFFD29 /* PriceChartView.swift */,
+				4CC4D8BB2FC49A1D00EFFD29 /* AssetRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4CC4D8BC2FC49A1D00EFFD29 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8BD2FC49A1D00EFFD29 /* MarketView.swift */,
+				4CC4D8BE2FC49A1D00EFFD29 /* MarketSummaryCard.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		4CC4D8BF2FC49A1D00EFFD29 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8C02FC49A1D00EFFD29 /* OrdersView.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		4CC4D8C12FC49A1D00EFFD29 /* Watchlist */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8C22FC49A1D00EFFD29 /* WatchlistView.swift */,
+			);
+			path = Watchlist;
+			sourceTree = "<group>";
+		};
+		4CC4D8C42FC49A1D00EFFD29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4CC4D8C52FC49A1D00EFFD29 /* MockData.swift */,
+				4CC4D8C62FC49A1D00EFFD29 /* Colors.swift */,
+				4CC4D8C72FC49A1D00EFFD29 /* Formatters.swift */,
+			);
+			name = Utils;
+			path = ../../Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC4D8712FC4987C00EFFD29 /* TradePro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC4D8962FC4988000EFFD29 /* Build configuration list for PBXNativeTarget "TradePro" */;
+			buildPhases = (
+				4CC4D86E2FC4987C00EFFD29 /* Sources */,
+				4CC4D86F2FC4987C00EFFD29 /* Frameworks */,
+				4CC4D8702FC4987C00EFFD29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradePro;
+			productName = TradePro;
+			productReference = 4CC4D8722FC4987C00EFFD29 /* TradePro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC4D86A2FC4987B00EFFD29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					4CC4D8712FC4987C00EFFD29 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 4CC4D86D2FC4987B00EFFD29 /* Build configuration list for PBXProject "TradePro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CC4D8692FC4987B00EFFD29;
+			productRefGroup = 4CC4D8732FC4987C00EFFD29 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CC4D8AC2FC49A1C00EFFD29 /* Products */;
+					ProjectRef = 4CC4D8AB2FC49A1C00EFFD29 /* TradePro.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4CC4D8712FC4987C00EFFD29 /* TradePro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC4D8702FC4987C00EFFD29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC4D8CF2FC49A1D00EFFD29 /* Preview Assets.xcassets in Resources */,
+				4CC4D87D2FC4987F00EFFD29 /* Preview Assets.xcassets in Resources */,
+				4CC4D8D12FC49A1D00EFFD29 /* README.md in Resources */,
+				4CC4D8CE2FC49A1D00EFFD29 /* Assets.xcassets in Resources */,
+				4CC4D87A2FC4987F00EFFD29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC4D86E2FC4987C00EFFD29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC4D8D42FC49A1D00EFFD29 /* Asset.swift in Sources */,
+				4CC4D8DF2FC49A1D00EFFD29 /* Colors.swift in Sources */,
+				4CC4D8CB2FC49A1D00EFFD29 /* OrderViewModel.swift in Sources */,
+				4CC4D8D52FC49A1D00EFFD29 /* ChartView.swift in Sources */,
+				4CC4D8CA2FC49A1D00EFFD29 /* MarketViewModel.swift in Sources */,
+				4CC4D8E02FC49A1D00EFFD29 /* Formatters.swift in Sources */,
+				4CC4D8DB2FC49A1D00EFFD29 /* OrdersView.swift in Sources */,
+				4CC4D8DC2FC49A1D00EFFD29 /* WatchlistView.swift in Sources */,
+				4CC4D8DE2FC49A1D00EFFD29 /* MockData.swift in Sources */,
+				4CC4D8D92FC49A1D00EFFD29 /* MarketView.swift in Sources */,
+				4CC4D8DA2FC49A1D00EFFD29 /* MarketSummaryCard.swift in Sources */,
+				4CC4D8D32FC49A1D00EFFD29 /* CandleData.swift in Sources */,
+				4CC4D8D62FC49A1D00EFFD29 /* OrderSheet.swift in Sources */,
+				4CC4D8C92FC49A1D00EFFD29 /* WatchlistViewModel.swift in Sources */,
+				4CC4D8DD2FC49A1D00EFFD29 /* ContentView.swift in Sources */,
+				4CC4D8E12FC49A1D00EFFD29 /* TradeProApp.swift in Sources */,
+				4CC4D8D82FC49A1D00EFFD29 /* AssetRow.swift in Sources */,
+				4CC4D8D22FC49A1D00EFFD29 /* Order.swift in Sources */,
+				4CC4D8D72FC49A1D00EFFD29 /* PriceChartView.swift in Sources */,
+				A1B2C3D4E5F6A7B8C9D0E1F3 /* TradingViewWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4CC4D8942FC4988000EFFD29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CC4D8952FC4988000EFFD29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC4D8972FC4988000EFFD29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradePro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TradePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CC4D8982FC4988000EFFD29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradePro/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TradePro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC4D86D2FC4987B00EFFD29 /* Build configuration list for PBXProject "TradePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC4D8942FC4988000EFFD29 /* Debug */,
+				4CC4D8952FC4988000EFFD29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC4D8962FC4988000EFFD29 /* Build configuration list for PBXNativeTarget "TradePro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC4D8972FC4988000EFFD29 /* Debug */,
+				4CC4D8982FC4988000EFFD29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC4D86A2FC4987B00EFFD29 /* Project object */;
+}

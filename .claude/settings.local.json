@@ -3,7 +3,10 @@
     "allow": [
       "Bash(dir \"d:\\\\Work\\\\trading-ios\")",
       "Bash(flutter --version)",
-      "PowerShell(flutter --version 2>&1)"
+      "PowerShell(flutter --version 2>&1)",
+      "Bash(git -C /Users/os/Desktop/trading-ios status)",
+      "Bash(xcodebuild -project TradePro.xcodeproj -scheme TradePro -destination 'platform=iOS Simulator,name=iPhone 16' build)",
+      "Bash(xcodebuild -project TradePro.xcodeproj -scheme TradePro -destination 'platform=iOS Simulator,name=iPhone 15' CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO build)"
     ]
   }
 }
