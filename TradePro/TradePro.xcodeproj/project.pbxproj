@@ -32,6 +32,9 @@
 		4CC4D8E02FC49A1D00EFFD29 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C72FC49A1D00EFFD29 /* Formatters.swift */; };
 		4CC4D8E12FC49A1D00EFFD29 /* TradeProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */; };
 		A1B2C3D4E5F6A7B8C9D0E1F3 /* TradingViewWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6A7B8C9D0E1F2 /* TradingViewWebView.swift */; };
+		AA000011000000000000001 /* AIAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001000000000000001 /* AIAnalysisService.swift */; };
+		AA000012000000000000001 /* AIAnalysisSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000001 /* AIAnalysisSheet.swift */; };
+		AA000013000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000003000000000000001 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		4CC4D8C62FC49A1D00EFFD29 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4CC4D8C72FC49A1D00EFFD29 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TradeProApp.swift; path = ../../TradeProApp.swift; sourceTree = "<group>"; };
+		AA000001000000000000001 /* AIAnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIAnalysisService.swift; sourceTree = "<group>"; };
+		AA000002000000000000001 /* AIAnalysisSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIAnalysisSheet.swift; sourceTree = "<group>"; };
+		AA000003000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 				4CC4D8C32FC49A1D00EFFD29 /* ContentView.swift */,
 				4CC4D8B12FC49A1D00EFFD29 /* Models */,
 				4CC4D8B02FC49A1D00EFFD29 /* README.md */,
+				AA000021000000000000001 /* Services */,
 				4CC4D8A32FC49A1C00EFFD29 /* TradePro */,
 				4CC4D8C82FC49A1D00EFFD29 /* TradeProApp.swift */,
 				4CC4D8C42FC49A1D00EFFD29 /* Utils */,
@@ -198,6 +205,7 @@
 				4CC4D8B82FC49A1D00EFFD29 /* Components */,
 				4CC4D8BC2FC49A1D00EFFD29 /* Market */,
 				4CC4D8BF2FC49A1D00EFFD29 /* Orders */,
+				AA000022000000000000001 /* Settings */,
 				4CC4D8C12FC49A1D00EFFD29 /* Watchlist */,
 			);
 			name = Views;
@@ -219,6 +227,7 @@
 				4CC4D8B92FC49A1D00EFFD29 /* OrderSheet.swift */,
 				4CC4D8BA2FC49A1D00EFFD29 /* PriceChartView.swift */,
 				4CC4D8BB2FC49A1D00EFFD29 /* AssetRow.swift */,
+				AA000002000000000000001 /* AIAnalysisSheet.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -257,6 +266,23 @@
 			);
 			name = Utils;
 			path = ../../Utils;
+			sourceTree = "<group>";
+		};
+		AA000021000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA000001000000000000001 /* AIAnalysisService.swift */,
+			);
+			name = Services;
+			path = ../../Services;
+			sourceTree = "<group>";
+		};
+		AA000022000000000000001 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA000003000000000000001 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +385,9 @@
 				4CC4D8D22FC49A1D00EFFD29 /* Order.swift in Sources */,
 				4CC4D8D72FC49A1D00EFFD29 /* PriceChartView.swift in Sources */,
 				A1B2C3D4E5F6A7B8C9D0E1F3 /* TradingViewWebView.swift in Sources */,
+				AA000011000000000000001 /* AIAnalysisService.swift in Sources */,
+				AA000012000000000000001 /* AIAnalysisSheet.swift in Sources */,
+				AA000013000000000000001 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

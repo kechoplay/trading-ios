@@ -6,8 +6,9 @@ struct ChartView: View {
     @EnvironmentObject var marketVM:    MarketViewModel
     @EnvironmentObject var watchlistVM: WatchlistViewModel
 
-    @State private var interval   = "4H"
+    @State private var interval      = "4H"
     @State private var orderSide: OrderSide? = nil
+    @State private var showAIAnalysis = false
 
     private let intervals     = ["1H", "4H", "1D", "1W", "1M"]
     private let tvIntervalMap = ["1H": "60", "4H": "240", "1D": "D", "1W": "W", "1M": "M"]
@@ -21,15 +22,14 @@ struct ChartView: View {
             priceHeader
             intervalRow
             TradingViewWebView(symbol: live.tradingViewSymbol, interval: tvInterval)
-                .ignoresSafeArea(edges: .bottom)
-            tradeButtons
+            analyzeBar
         }
         .background(Color.appBackground)
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { toolbarContent }
-        .sheet(item: $orderSide) { side in
-            OrderSheet(asset: live, side: side)
+        .sheet(isPresented: $showAIAnalysis) {
+            AIAnalysisSheet(asset: live)
                 .presentationDetents([.medium, .large])
                 .presentationDragIndicator(.visible)
         }
@@ -65,6 +65,25 @@ struct ChartView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 8)
         }
+    }
+
+    private var analyzeBar: some View {
+        Button { showAIAnalysis = true } label: {
+            HStack(spacing: 8) {
+                Image(systemName: "sparkles")
+                    .font(.system(size: 15, weight: .semibold))
+                Text("AI Analyze")
+                    .font(.system(size: 15, weight: .bold))
+            }
+            .foregroundColor(.appBackground)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .background(Color.appPrimary)
+            .cornerRadius(12)
+        }
+        .padding(.horizontal, 16)
+        .padding(.top, 12)
+        .padding(.bottom, 20)
     }
 
     private var tradeButtons: some View {

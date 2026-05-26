@@ -23,6 +23,9 @@ struct Asset: Identifiable, Equatable, Hashable {
             return "NASDAQ:\(symbol)"
         case "Forex":
             let clean = symbol.replacingOccurrences(of: "/", with: "")
+            if clean == "XAUUSD" || clean == "XAGUSD" {
+                return "OANDA:\(clean)"
+            }
             return "FX:\(clean)"
         default:
             return symbol

@@ -2,10 +2,11 @@ import SwiftUI
 
 struct MarketView: View {
     @EnvironmentObject var marketVM: MarketViewModel
-    @State private var selectedMarket = "Crypto"
-    @State private var searchText     = ""
+    @State private var selectedMarket  = "Forex"
+    @State private var searchText      = ""
+    @State private var showSettings    = false
 
-    private let markets = ["Crypto", "Stocks", "Forex"]
+    private let markets = ["Forex", "Crypto"]
 
     private var searchResults: [Asset] {
         guard !searchText.isEmpty else { return [] }
@@ -42,9 +43,14 @@ struct MarketView: View {
             .searchable(text: $searchText, prompt: "Search assets")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button { } label: { Image(systemName: "bell") }
+                    Button { showSettings = true } label: { Image(systemName: "gearshape") }
                         .foregroundColor(.textPrimary)
                 }
+            }
+            .sheet(isPresented: $showSettings) {
+                SettingsView()
+                    .presentationDetents([.medium])
+                    .presentationDragIndicator(.visible)
             }
         }
     }

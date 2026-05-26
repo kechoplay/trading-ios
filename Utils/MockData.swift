@@ -17,10 +17,8 @@ struct MockData {
         Asset(symbol: "META",    name: "Meta",                  price:   512.80, change:  1.56, volume:     18_000_000, marketCap: 1_308_000_000_000, market: "Stocks", iconHex: "0080FB"),
         Asset(symbol: "AMZN",    name: "Amazon",                price:   187.40, change:  0.78, volume:     32_000_000, marketCap: 1_960_000_000_000, market: "Stocks", iconHex: "FF9900"),
         // Forex
-        Asset(symbol: "EUR/USD", name: "Euro / US Dollar",      price:    1.0842,change:  0.12, volume:  5_800_000_000, marketCap: 0, market: "Forex", iconHex: "003399"),
-        Asset(symbol: "GBP/USD", name: "British Pound / USD",   price:    1.2654,change: -0.08, volume:  3_200_000_000, marketCap: 0, market: "Forex", iconHex: "012169"),
-        Asset(symbol: "USD/JPY", name: "US Dollar / Yen",       price:  156.42,  change:  0.34, volume:  4_100_000_000, marketCap: 0, market: "Forex", iconHex: "BC002D"),
-        Asset(symbol: "USD/CHF", name: "US Dollar / Swiss Franc",price:   0.9021,change: -0.15, volume:  1_800_000_000, marketCap: 0, market: "Forex", iconHex: "FF0000"),
+        Asset(symbol: "XAU/USD", name: "Gold / US Dollar",   price: 2340.50, change:  0.62, volume: 150_000_000, marketCap: 0, market: "Forex", iconHex: "FFD700"),
+        Asset(symbol: "XAG/USD", name: "Silver / US Dollar", price:   30.45, change: -0.38, volume:  80_000_000, marketCap: 0, market: "Forex", iconHex: "C0C0C0"),
     ]
 
     static func generateCandles(basePrice: Double, count: Int) -> [CandleData] {
