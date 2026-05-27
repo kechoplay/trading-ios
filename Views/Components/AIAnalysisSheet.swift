@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct AIAnalysisSheet: View {
-    let asset: Asset
+    let asset:  Asset
+    var onSave: ((String, String) -> Void)? = nil
     @Environment(\.dismiss) private var dismiss
 
     @State private var result: AIAnalysisResult? = nil
@@ -110,7 +111,9 @@ struct AIAnalysisSheet: View {
         isLoading = true
         errorMessage = nil
         do {
-            result = try await AIAnalysisService.analyze(asset: asset)
+            let r = try await AIAnalysisService.analyze(asset: asset)
+            result = r
+            onSave?(String(r.setup.characters), String(r.reasoning.characters))
         } catch {
             errorMessage = "Không thể kết nối AI. Vui lòng kiểm tra API key."
         }

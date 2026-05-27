@@ -5,6 +5,7 @@ struct ChartView: View {
 
     @EnvironmentObject var marketVM:    MarketViewModel
     @EnvironmentObject var watchlistVM: WatchlistViewModel
+    @EnvironmentObject var signalsVM:   SignalsViewModel
 
     @State private var interval      = "4H"
     @State private var orderSide: OrderSide? = nil
@@ -29,9 +30,11 @@ struct ChartView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { toolbarContent }
         .sheet(isPresented: $showAIAnalysis) {
-            AIAnalysisSheet(asset: live)
-                .presentationDetents([.medium, .large])
-                .presentationDragIndicator(.visible)
+            AIAnalysisSheet(asset: live, onSave: { setup, reasoning in
+                signalsVM.add(symbol: live.symbol, setup: setup, reasoning: reasoning)
+            })
+            .presentationDetents([.medium, .large])
+            .presentationDragIndicator(.visible)
         }
     }
 

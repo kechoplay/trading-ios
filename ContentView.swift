@@ -7,8 +7,8 @@ struct ContentView: View {
                 .tabItem { Label("Markets",  systemImage: "chart.bar.fill") }
             WatchlistView()
                 .tabItem { Label("Watchlist", systemImage: "star.fill") }
-            OrdersView()
-                .tabItem { Label("Orders",   systemImage: "doc.text.fill") }
+            SignalsView()
+                .tabItem { Label("Signals", systemImage: "antenna.radiowaves.left.and.right") }
         }
         .tint(.appPrimary)
     }

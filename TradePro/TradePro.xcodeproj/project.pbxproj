@@ -35,6 +35,9 @@
 		AA000011000000000000001 /* AIAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000001000000000000001 /* AIAnalysisService.swift */; };
 		AA000012000000000000001 /* AIAnalysisSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000002000000000000001 /* AIAnalysisSheet.swift */; };
 		AA000013000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000003000000000000001 /* SettingsView.swift */; };
+		AA000014000000000000001 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000004000000000000001 /* Signal.swift */; };
+		AA000015000000000000001 /* SignalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000005000000000000001 /* SignalsViewModel.swift */; };
+		AA000016000000000000001 /* SignalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000006000000000000001 /* SignalsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,9 @@
 		AA000001000000000000001 /* AIAnalysisService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIAnalysisService.swift; sourceTree = "<group>"; };
 		AA000002000000000000001 /* AIAnalysisSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIAnalysisSheet.swift; sourceTree = "<group>"; };
 		AA000003000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA000004000000000000001 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		AA000005000000000000001 /* SignalsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsViewModel.swift; sourceTree = "<group>"; };
+		AA000006000000000000001 /* SignalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				4CC4D8A02FC49A1C00EFFD29 /* WatchlistViewModel.swift */,
 				4CC4D8A12FC49A1C00EFFD29 /* MarketViewModel.swift */,
 				4CC4D8A22FC49A1C00EFFD29 /* OrderViewModel.swift */,
+				AA000005000000000000001 /* SignalsViewModel.swift */,
 			);
 			name = ViewModels;
 			path = ../../ViewModels;
@@ -193,6 +200,7 @@
 				4CC4D8B22FC49A1D00EFFD29 /* Order.swift */,
 				4CC4D8B32FC49A1D00EFFD29 /* CandleData.swift */,
 				4CC4D8B42FC49A1D00EFFD29 /* Asset.swift */,
+				AA000004000000000000001 /* Signal.swift */,
 			);
 			name = Models;
 			path = ../../Models;
@@ -206,6 +214,7 @@
 				4CC4D8BC2FC49A1D00EFFD29 /* Market */,
 				4CC4D8BF2FC49A1D00EFFD29 /* Orders */,
 				AA000022000000000000001 /* Settings */,
+				AA000023000000000000001 /* Signals */,
 				4CC4D8C12FC49A1D00EFFD29 /* Watchlist */,
 			);
 			name = Views;
@@ -283,6 +292,14 @@
 				AA000003000000000000001 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		AA000023000000000000001 /* Signals */ = {
+			isa = PBXGroup;
+			children = (
+				AA000006000000000000001 /* SignalsView.swift */,
+			);
+			path = Signals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +405,9 @@
 				AA000011000000000000001 /* AIAnalysisService.swift in Sources */,
 				AA000012000000000000001 /* AIAnalysisSheet.swift in Sources */,
 				AA000013000000000000001 /* SettingsView.swift in Sources */,
+				AA000014000000000000001 /* Signal.swift in Sources */,
+				AA000015000000000000001 /* SignalsViewModel.swift in Sources */,
+				AA000016000000000000001 /* SignalsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

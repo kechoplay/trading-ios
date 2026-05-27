@@ -80,12 +80,6 @@ struct MarketListView: View {
 
     var body: some View {
         List {
-            Section {
-                MarketSummaryCard(market: market, assets: assets)
-                    .listRowBackground(Color.appBackground)
-                    .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
-                    .listRowSeparator(.hidden)
-            }
             ForEach(assets) { asset in
                 NavigationLink(value: asset) { AssetRow(asset: asset) }
                     .listRowBackground(Color.appSurface)
